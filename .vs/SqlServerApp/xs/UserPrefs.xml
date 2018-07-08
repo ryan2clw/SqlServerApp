@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{A7FDE832-3BE3-48CB-B386-30AAADDE7AB7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Employee.cs">
+    <Files>
+      <File FileName="Views/Home/Contact.cshtml" Line="5" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="20" Column="70" />
+      <File FileName="Models/Employee.cs" Line="15" Column="1" />
+      <File FileName="Startup.cs" Line="22" Column="43" />
+      <File FileName="appsettings.json" Line="4" Column="28" />
+      <File FileName="Views/Home/About.cshtml" Line="8" Column="1" />
+      <File FileName="Controllers/EmployeeController.cs" Line="71" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SqlServerApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

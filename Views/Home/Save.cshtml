@@ -1,0 +1,54 @@
+﻿@model SqlServerApp.Models.Employee
+<h2>Save</h2>
+<head>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
+</head>
+@using (Html.BeginForm("save", "home", FormMethod.Post, new { id = "popupForm" }))
+{
+    if (Model != null && Model.employee_id > 0)
+    {
+        @Html.HiddenFor(a => a.employee_id)
+    }
+
+    <div class="form-group">
+        <label>First Name</label>
+        @Html.TextBoxFor(a => a.full_name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.full_name)
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        @Html.TextBoxFor(a => a.gender, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.gender)
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        @Html.TextBoxFor(a => a.department, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.department)
+    </div>
+    <div class="form-group">
+        <label>City</label>
+        @Html.TextBoxFor(a => a.position, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.position)
+        [)
+    </div>
+    <div class="form-group">
+        <label>Country</label>
+        @Html.TextBoxFor(a => a.salary, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.salary)
+    </div>
+
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+}
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.10/jquery.validate.unobtrusive.min.js" integrity="sha256-zkVFxDCBA0K+Fl6QZDRpD0G+GQ+TfuGv7xXkIAM69h8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script>$('input').css("max-width", "450px");</script>
+    }

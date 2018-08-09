@@ -12298,13 +12298,13 @@
       "projectName": "SqlServerApp",
       "projectPath": "/Users/ryandines/Projects/SqlServerApp/SqlServerApp.csproj",
       "packagesPath": "/Users/ryandines/.nuget/packages/",
-      "outputPath": "/Users/ryandines/Projects/SqlServerApp/obj",
+      "outputPath": "/Users/ryandines/Projects/SqlServerApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/ryandines/.config/NuGet/NuGet.Config"
+        "/Users/ryandines/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -12326,29 +12326,29 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.1.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )",
+            "autoReferenced": true
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.1.0, )",
+            "autoReferenced": true
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )"
           },
           "System.Data.Common": {
             "target": "Package",
-            "version": "4.3.0"
+            "version": "[4.3.0, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
-            "version": "4.5.1"
+            "version": "[4.5.1, )"
           }
         },
         "imports": [

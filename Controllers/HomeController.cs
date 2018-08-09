@@ -23,8 +23,7 @@ namespace SqlServerApp.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Sample of SQL-Server data access";
-            Employee probMe = new Employee();
-            return View(probMe);
+            return View();
         }
 
         public IActionResult Contact()

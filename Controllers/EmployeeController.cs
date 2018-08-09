@@ -26,6 +26,7 @@ namespace SqlServerApp.Controllers
                 string sql = "dbo.usp_employee_get_all";
                 using (SqlCommand sqlCmd = new SqlCommand(sql, sqlConn))
                 {
+                    Console.WriteLine("Did stuff");
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlConn.Open();
                     using (SqlDataAdapter sqlAdapter = new SqlDataAdapter(sqlCmd))

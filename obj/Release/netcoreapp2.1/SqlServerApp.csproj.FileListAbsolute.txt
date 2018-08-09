@@ -32,3 +32,8 @@
 /Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/SqlServerApp.dll
 /Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/SqlServerApp.pdb
 /Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/SqlServerApp.csproj.CopyComplete
+/Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/Razor/Views/Home/Save.g.cshtml.cs
+/Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/Razor/Views/Account/Register.g.cshtml.cs
+/Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/Razor/Views/Account/Login.g.cshtml.cs
+/Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/Razor/Views/Account/ForgotPassword.g.cshtml.cs
+/Users/ryandines/Projects/SqlServerApp/obj/Release/netcoreapp2.1/Razor/Views/Account/ForgotPasswordConfirmation.g.cshtml.cs

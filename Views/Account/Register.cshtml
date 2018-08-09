@@ -1,0 +1,34 @@
+﻿<div class="container body-content">
+
+    <h2>Register</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post" action="/Identity/Account/Register" novalidate="novalidate">
+                <h4>This is not part of the seniordevops.com login system, but rather a demonstration of EntityCore's ORM (object relational mapper), and the code first approaach to using MS-SQL Server.</h4>
+                <hr>
+                <div class="text-danger validation-summary-valid" data-valmsg-summary="true">
+                    <ul>
+                        <li style="display:none"></li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="Input_Email">Email</label>
+                    <input class="form-control" type="email" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Input_Email" name="Input.Email" value="">
+                    <span class="text-danger field-validation-valid" data-valmsg-for="Input.Email" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Input_Password">Password</label>
+                    <input class="form-control" type="password" data-val="true" data-val-length="The Password must be at least 6 and at max 100 characters long." data-val-length-max="100" data-val-length-min="6" data-val-required="The Password field is required." id="Input_Password" name="Input.Password">
+                    <span class="text-danger field-validation-valid" data-valmsg-for="Input.Password" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Input_ConfirmPassword">Confirm password</label>
+                    <input class="form-control" type="password" data-val="true" data-val-equalto="The password and confirmation password do not match." data-val-equalto-other="*.Password" id="Input_ConfirmPassword" name="Input.ConfirmPassword">
+                    <span class="text-danger field-validation-valid" data-valmsg-for="Input.ConfirmPassword" data-valmsg-replace="true"></span>
+                </div>
+                <button type="submit" class="btn btn-default">Register</button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8IWbPHM_NTJDv_7HGewWzbbRveP09yQOznYdTWL2aN5X_4_eVbNE1w8D_qz7zegloVtdAhuVOJbJLQo0ja73FB3PgYycyGpn-DfX3fJqv4Cx8ns6Ygh6M7nMxV0eozO7hoDxUfPwrIJb2RcFtyzhPpMevZ4P0M8aVyBP55SP-5C4l23dCtDXXUOAY_YLwt67dw">
+            </form>
+        </div>
+    </div>
+</div>

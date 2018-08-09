@@ -37,11 +37,13 @@ namespace SqlServerApp
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddIdentity<IdentityUser, IdentityRole>(options => options.Stores.MaxLengthForKeys = 128)
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultUI()
+                .AddDefaultTokenProviders();
             services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
                                                                     .AllowAnyMethod()
-                                                                     .AllowAnyHeader()));
+                                                                    .AllowAnyHeader()));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -61,12 +63,13 @@ namespace SqlServerApp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
-
+            app.UseCookiePolicy(); 
             app.UseAuthentication();
-
             app.UseMvc(routes =>
             {
+             //   routes.MapRoute(
+             //       name: "identity",
+             //       template: "Identity/{controller=Account}/{action=Register}/{id?}");
                 routes.MapRoute(
                     name: "default",
                     template: "SqlServer/{controller=Home}/{action=Index}/{id?}");

@@ -56,7 +56,7 @@ using SqlServerApp.Models;
             WriteLiteral("<div class=\"container body-content\">\r\n\r\n    <h2>Forgot your password?</h2>\r\n    <h4>Enter your email.</h4>\r\n    <hr>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            ");
             EndContext();
             BeginContext(220, 870, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8fbd39c9d2042eaa3f3c288920d76e7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b90ef52293344b788ea3c2472fc17d6", async() => {
                 BeginContext(264, 819, true);
                 WriteLiteral(@"
                 <div class=""text-danger validation-summary-valid"" data-valmsg-summary=""true"">

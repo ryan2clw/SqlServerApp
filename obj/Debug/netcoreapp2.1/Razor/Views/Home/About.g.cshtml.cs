@@ -60,7 +60,7 @@ using SqlServerApp.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(66, 583, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8574ef8105d46c8807a9ef7da83eb34", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b9ff7797bbf42e8819d7f19dcc529af", async() => {
                 BeginContext(72, 570, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
@@ -93,7 +93,7 @@ using SqlServerApp.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(651, 707, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81bcd8105f704e5594a1d54f4b8f160d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eadd2635e22c472aae637a6464e99d77", async() => {
                 BeginContext(657, 10, true);
                 WriteLiteral("\r\n    <h3>");
                 EndContext();

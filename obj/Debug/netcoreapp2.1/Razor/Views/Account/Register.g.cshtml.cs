@@ -57,7 +57,7 @@ using SqlServerApp.Models;
             WriteLiteral("<div class=\"container body-content\">\r\n\r\n    <h2>Register</h2>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            ");
             EndContext();
             BeginContext(130, 2535, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4783205cbf89469a95668fd817833bfe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ee20c71ea194d6e8d9cfd7de7621654", async() => {
                 BeginContext(210, 2448, true);
                 WriteLiteral(@"
                 <h4>This is not part of the seniordevops.com login system, but rather a demonstration of EntityCore's ORM (object relational mapper), and the code first approaach to using MS-SQL Server.</h4>

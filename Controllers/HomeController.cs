@@ -10,13 +10,17 @@ using SqlServerApp.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.NodeServices;
+using SqlServerApp;
 
 namespace SqlServerApp.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
+        public IActionResult Index([FromServices] INodeServices nodeServices)
+        { 
+            var playbackResult = nodeServices.InvokeExportAsync<string>("./play-audio", "play", "/Users/ryandines/Projects/SqlServerApp/dopeTrapBeat9.mp3").Result;
             return View();
         }
 

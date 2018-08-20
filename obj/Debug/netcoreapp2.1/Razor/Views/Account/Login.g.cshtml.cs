@@ -57,7 +57,7 @@ using SqlServerApp.Models;
             WriteLiteral("<div class=\"container body-content\">\r\n\r\n\r\n    <h2>Log in</h2>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <section>\r\n                ");
             EndContext();
             BeginContext(157, 2766, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bdb3778e187f45178988d12e9f4d7a27", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3907126f01047d3840578c939aa5a14", async() => {
                 BeginContext(214, 2702, true);
                 WriteLiteral(@"
                     <h4>Use a local account to log in.</h4>
